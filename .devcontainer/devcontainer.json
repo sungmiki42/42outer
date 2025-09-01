@@ -1,4 +1,6 @@
 {
   "image": "ubuntu:latest",
-  "runArgs": ["--platform", "linux/amd64"]
+  "runArgs": ["--platform", "linux/amd64"],
+   "postCreateCommand": "apt-get update && apt-get install -y sudo git",
+  "remoteUser": "root"
 }
